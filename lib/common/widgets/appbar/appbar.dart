@@ -4,7 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:myapp/util/device/device_utility.dart';
 
-class HAppBar extends StatelessWidget {
+class HAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HAppBar({
     super.key,
     this.title,
@@ -43,5 +43,6 @@ class HAppBar extends StatelessWidget {
     );
   }
 
+  @override
   Size get preferredSize => Size.fromHeight(HDeviceUtils.getAppBarHeight());
 }
