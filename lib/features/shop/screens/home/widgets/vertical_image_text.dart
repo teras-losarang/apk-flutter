@@ -12,11 +12,13 @@ class HVerticalImageText extends StatelessWidget {
     this.textColor = HColors.white,
     this.backgroundColor,
     this.onTap,
+    this.isNetworkImage = false,
   });
 
   final String image, title;
   final Color textColor;
   final Color? backgroundColor;
+  final bool isNetworkImage;
   final void Function()? onTap;
 
   @override
@@ -40,7 +42,9 @@ class HVerticalImageText extends StatelessWidget {
               ),
               child: Center(
                 child: Image(
-                  image: AssetImage(image),
+                  image: isNetworkImage
+                      ? NetworkImage(image)
+                      : AssetImage(image) as ImageProvider,
                   fit: BoxFit.cover,
                   color: dark ? HColors.light : HColors.dark,
                 ),

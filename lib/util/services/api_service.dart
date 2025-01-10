@@ -13,10 +13,12 @@ class ApiService extends GetxService {
   String code_success = "000";
   String error_success = "111";
 
-  String path_auth = "auth/";
-  String path_auth_me = "me";
-  String path_auth_login = "login";
-  String path_auth_register = "register";
+  String path_auth = "auth";
+  String path_auth_me = "/me";
+  String path_auth_login = "/login";
+  String path_auth_register = "/register";
+
+  String path_category = "category";
 
   String generateSignature({
     required String path,

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:myapp/common/widgets/containers/heading_container.dart';
 import 'package:myapp/common/widgets/containers/search_container.dart';
 import 'package:myapp/common/widgets/layouts/grid_layout.dart';
 import 'package:myapp/common/widgets/shapes/containers/primary_header_container.dart';
+import 'package:myapp/features/shop/controllers/home_controller.dart';
 import 'package:myapp/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:myapp/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:myapp/features/shop/screens/home/widgets/promo_slider.dart';
@@ -16,6 +18,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(HomeController());
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -45,16 +49,17 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(HSizes.defaultSpace),
               child: Column(
                 children: [
-                  const HPromoSlider(
-                    banners: [
-                      HImageStrings.banner,
-                      HImageStrings.banner,
-                      HImageStrings.banner,
-                    ],
-                  ),
-                  const SizedBox(
-                    height: HSizes.spaceBtwSections,
-                  ),
+                  if (controller.categoryBanners.isNotEmpty)
+                    HPromoSlider(
+                      isNetworkImage: true,
+                      banners: controller.categoryBanners
+                          .map((e) => e.image!)
+                          .toList(),
+                    ),
+                  if (controller.categoryBanners.isNotEmpty)
+                    const SizedBox(
+                      height: HSizes.spaceBtwSections,
+                    ),
                   HHeadingContainer(
                     title: "Popular Product",
                     showActionButton: true,

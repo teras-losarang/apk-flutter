@@ -26,7 +26,12 @@ class ProfileController extends GetxController {
       }
 
       final response = await authProvide.me();
-      localStorage.setStorage(localStorage.user, response.body['data']);
+      if (response.body["code"] == authProvide.apiService.code_success) {
+        localStorage.setStorage(localStorage.user, response.body['data']);
+      } else {
+        HLoaders.errorSnackBar(
+            title: "Oh Snap!", message: response.body["messages"]);
+      }
     } catch (e) {
       HLoaders.errorSnackBar(title: "Oh Snap!", message: e.toString());
     }

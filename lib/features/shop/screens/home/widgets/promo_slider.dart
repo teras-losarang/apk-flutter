@@ -8,12 +8,11 @@ import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/sizes.dart';
 
 class HPromoSlider extends StatelessWidget {
-  const HPromoSlider({
-    super.key,
-    required this.banners,
-  });
+  const HPromoSlider(
+      {super.key, required this.banners, this.isNetworkImage = false});
 
   final List<String> banners;
+  final bool isNetworkImage;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +24,7 @@ class HPromoSlider extends StatelessWidget {
           items: banners
               .map((url) => HRoundedImageContainer(
                     imageUrl: url,
+                    isNetworkImage: isNetworkImage,
                     applyImageRadius: true,
                   ))
               .toList(),
