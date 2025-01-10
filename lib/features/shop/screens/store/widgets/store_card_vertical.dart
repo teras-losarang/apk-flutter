@@ -55,6 +55,7 @@ class StoreCardVertical extends StatelessWidget {
                   title: "ABC Terasi Udang 12asasa asasa aasas",
                   smallSize: true,
                   maxLines: 2,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

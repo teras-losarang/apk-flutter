@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/styles/shadow_style.dart';
 import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/sizes.dart';
 
@@ -14,12 +15,13 @@ class HRoundedContainer extends StatelessWidget {
     this.backgroundColor = HColors.white,
     this.padding,
     this.margin,
+    this.showShadow = false,
   });
 
   final double? width, height;
   final double radius;
   final Widget? child;
-  final bool showBorder;
+  final bool showBorder, showShadow;
   final Color borderColor;
   final Color backgroundColor;
   final EdgeInsetsGeometry? padding;
@@ -33,10 +35,10 @@ class HRoundedContainer extends StatelessWidget {
       padding: padding,
       margin: margin,
       decoration: BoxDecoration(
-        border: showBorder ? Border.all(color: borderColor) : null,
-        color: backgroundColor,
-        borderRadius: BorderRadius.circular(radius),
-      ),
+          border: showBorder ? Border.all(color: borderColor) : null,
+          color: backgroundColor,
+          borderRadius: BorderRadius.circular(radius),
+          boxShadow: [if (showShadow) HShadowStyle.horizontalProductShadow]),
       child: child,
     );
   }
