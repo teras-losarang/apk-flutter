@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/features/authentication/screens/login/login.dart';
+import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/image_strings.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:myapp/util/helpers/helper_functions.dart';
@@ -56,6 +57,8 @@ class ResetPasswordScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: HColors.primary),
                   onPressed: () => Get.offAll(() => const LoginScreen()),
                   child: const Text("Done"),
                 ),

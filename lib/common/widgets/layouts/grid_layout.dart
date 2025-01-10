@@ -21,10 +21,11 @@ class HGridLayout extends StatelessWidget {
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: HSizes.gridViewSpacing,
-          crossAxisSpacing: HSizes.gridViewSpacing,
-          mainAxisExtent: mainAxisExtent),
+        crossAxisCount: 2,
+        mainAxisSpacing: HSizes.gridViewSpacing,
+        crossAxisSpacing: HSizes.gridViewSpacing,
+        mainAxisExtent: mainAxisExtent,
+      ),
       itemBuilder: itemBuilder,
     );
   }

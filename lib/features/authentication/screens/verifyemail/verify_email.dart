@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/features/authentication/screens/login/login.dart';
 import 'package:myapp/features/authentication/screens/success/success.dart';
+import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/image_strings.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:myapp/util/helpers/helper_functions.dart';
@@ -64,6 +65,8 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () => Get.to(() => const SuccessScreen()),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: HColors.primary),
                   child: const Text("Continue"),
                 ),
               ),

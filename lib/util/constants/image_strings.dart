@@ -10,6 +10,7 @@ class HImageStrings {
 
   static const String sendEmail = "assets/images/send-email.png";
   static const String successEmail = "assets/images/success-email.jpg";
+  static const String successOrder = "assets/gif/success.gif";
 
   static const String banner = "assets/images/banner.png";
   static const String product = "assets/images/product.jpg";

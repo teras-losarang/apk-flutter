@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/features/authentication/screens/resetpassword/reset_password.dart';
+import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -36,6 +37,8 @@ class ForgotPasswordScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+                style:
+                    ElevatedButton.styleFrom(backgroundColor: HColors.primary),
                 onPressed: () => Get.off(() => const ResetPasswordScreen()),
                 child: const Text('Submit'),
               ),

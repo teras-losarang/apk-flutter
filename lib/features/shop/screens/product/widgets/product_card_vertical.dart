@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:myapp/common/styles/shadow_style.dart';
 import 'package:myapp/common/widgets/containers/circular_icon_container.dart';
@@ -6,6 +7,7 @@ import 'package:myapp/common/widgets/containers/rounded_container.dart';
 import 'package:myapp/common/widgets/containers/rounded_image_container.dart';
 import 'package:myapp/features/shop/screens/product/widgets/product_price_text.dart';
 import 'package:myapp/features/shop/screens/product/widgets/product_title_text.dart';
+import 'package:myapp/features/shop/screens/product_detail/product_detail.dart';
 import 'package:myapp/features/shop/screens/store/widgets/brand_title_text_with_verified_icon.dart';
 import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/image_strings.dart';
@@ -20,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = HHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -73,23 +75,18 @@ class ProductCardVertical extends StatelessWidget {
             const SizedBox(
               height: HSizes.spaceBtwItems / 2,
             ),
-            const Padding(
-              padding: EdgeInsets.only(
-                left: HSizes.sm,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ProductTitleText(
-                    title: "ABC Terasi Udang",
-                    smallSize: true,
-                  ),
-                  SizedBox(
-                    height: HSizes.spaceBtwItems / 2,
-                  ),
-                  BrandTitleTextWithVerifiedIcon(title: "ABC"),
-                ],
-              ),
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ProductTitleText(
+                  title: "ABC Terasi Udang",
+                  smallSize: true,
+                ),
+                SizedBox(
+                  height: HSizes.spaceBtwItems / 2,
+                ),
+                BrandTitleTextWithVerifiedIcon(title: "ABC"),
+              ],
             ),
             const Spacer(),
             Row(
