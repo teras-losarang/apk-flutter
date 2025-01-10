@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:myapp/data/models/category_model.dart';
 import 'package:myapp/data/models/filter_model.dart';
 import 'package:myapp/util/helpers/network_manager.dart';

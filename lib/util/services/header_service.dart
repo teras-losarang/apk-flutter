@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:get/get_connect/http/src/request/request.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:myapp/util/services/api_service.dart';
 import 'package:myapp/util/services/storage_service.dart';
 
 class HeaderService {

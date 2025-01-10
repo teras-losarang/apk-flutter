@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:myapp/common/styles/spacing_styles.dart';
-import 'package:myapp/features/authentication/screens/login/login.dart';
 import 'package:myapp/util/constants/colors.dart';
-import 'package:myapp/util/constants/image_strings.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:myapp/util/helpers/helper_functions.dart';
 

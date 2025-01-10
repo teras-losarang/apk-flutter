@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/interceptors/get_modifiers.dart';
 import 'package:get/get_connect/http/src/request/request.dart';
 import 'package:myapp/data/models/user_model.dart';
 import 'package:myapp/util/services/api_service.dart';

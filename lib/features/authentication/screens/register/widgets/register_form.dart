@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/features/authentication/controllers/register_controller.dart';
 import 'package:myapp/features/authentication/screens/register/widgets/register_term_condition.dart';
-import 'package:myapp/features/authentication/screens/verifyemail/verify_email.dart';
 import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';

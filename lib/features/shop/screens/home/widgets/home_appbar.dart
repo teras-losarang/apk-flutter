@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/common/widgets/appbar/appbar.dart';
-import 'package:myapp/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:myapp/features/shop/controllers/home_controller.dart';
 import 'package:myapp/features/shop/screens/cart/cart.dart';
 import 'package:myapp/features/shop/screens/home/widgets/cart_menu_icon.dart';

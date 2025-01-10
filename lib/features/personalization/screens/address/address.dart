@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:myapp/common/widgets/appbar/appbar.dart';
-import 'package:myapp/common/widgets/containers/rounded_container.dart';
-import 'package:myapp/common/widgets/shapes/containers/circular_container.dart';
 import 'package:myapp/features/personalization/screens/address/new_address.dart';
 import 'package:myapp/features/personalization/screens/address/widgets/list_address_widget.dart';
 import 'package:myapp/util/constants/colors.dart';

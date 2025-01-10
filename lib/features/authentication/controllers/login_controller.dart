@@ -1,16 +1,11 @@
-import 'dart:convert';
 
-import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:myapp/data/models/user_model.dart';
-import 'package:myapp/features/shop/screens/home/home.dart';
 import 'package:myapp/navigation_menu.dart';
 import 'package:myapp/util/helpers/network_manager.dart';
 import 'package:myapp/util/popups/loaders.dart';
 import 'package:myapp/util/providers/auth_provider.dart';
-import 'package:myapp/util/services/env_service.dart';
 import 'package:myapp/util/services/storage_service.dart';
 
 class LoginController extends GetxController {

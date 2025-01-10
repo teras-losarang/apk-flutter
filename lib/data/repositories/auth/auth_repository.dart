@@ -1,10 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:myapp/features/authentication/screens/login/login.dart';
 import 'package:myapp/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:http/http.dart' as http;
 import 'package:myapp/navigation_menu.dart';
 import 'package:myapp/util/services/storage_service.dart';
 

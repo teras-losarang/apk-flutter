@@ -19,7 +19,7 @@ class OrderScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(HSizes.defaultSpace),
         child: ListView.separated(
-          itemBuilder: (_, index) => OrderList(),
+          itemBuilder: (_, index) => const OrderList(),
           separatorBuilder: (_, __) => const SizedBox(
             height: HSizes.spaceBtwItems,
           ),

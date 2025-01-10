@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 import 'package:myapp/common/widgets/appbar/appbar.dart';
 import 'package:myapp/common/widgets/containers/circular_image_container.dart';

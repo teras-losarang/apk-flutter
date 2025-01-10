@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:myapp/common/widgets/appbar/appbar.dart';
-import 'package:myapp/common/widgets/containers/circular_icon_container.dart';
 import 'package:myapp/common/widgets/containers/heading_container.dart';
-import 'package:myapp/common/widgets/containers/rounded_image_container.dart';
-import 'package:myapp/common/widgets/shapes/curve_edges/curved_edges_widget.dart';
 import 'package:myapp/features/shop/screens/product_detail/widgets/button_add_to_cart_widget.dart';
 import 'package:myapp/features/shop/screens/product_detail/widgets/product_detail_image_slider.dart';
 import 'package:myapp/features/shop/screens/product_detail/widgets/product_meta_data.dart';
 import 'package:myapp/features/shop/screens/product_detail/widgets/rating_share_widget.dart';
-import 'package:myapp/util/constants/colors.dart';
-import 'package:myapp/util/constants/image_strings.dart';
 import 'package:myapp/util/constants/sizes.dart';
 import 'package:myapp/util/helpers/helper_functions.dart';
 import 'package:readmore/readmore.dart';

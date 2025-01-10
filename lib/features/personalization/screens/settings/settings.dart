@@ -9,7 +9,6 @@ import 'package:myapp/features/authentication/screens/login/login.dart';
 import 'package:myapp/features/personalization/screens/address/address.dart';
 import 'package:myapp/features/personalization/screens/profile/profile.dart';
 import 'package:myapp/features/personalization/screens/settings/widgets/settings_menu_tile.dart';
-import 'package:myapp/features/shop/screens/cart/cart.dart';
 import 'package:myapp/features/shop/screens/order/order.dart';
 import 'package:myapp/util/constants/colors.dart';
 import 'package:myapp/util/constants/sizes.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/features/authentication/controllers/login_controller.dart';
-import 'package:myapp/navigation_menu.dart';
 import 'package:myapp/features/authentication/screens/forgotpassword/forgot_password.dart';
 import 'package:myapp/features/authentication/screens/register/register.dart';
 import 'package:myapp/util/constants/colors.dart';

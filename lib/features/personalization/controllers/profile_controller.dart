@@ -1,10 +1,7 @@
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
-import 'package:http/http.dart';
 import 'package:myapp/util/helpers/network_manager.dart';
 import 'package:myapp/util/popups/loaders.dart';
 import 'package:myapp/util/providers/auth_provider.dart';
-import 'package:myapp/util/services/header_service.dart';
 import 'package:myapp/util/services/storage_service.dart';
 
 class ProfileController extends GetxController {
